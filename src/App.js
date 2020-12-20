@@ -4,8 +4,11 @@ import HeroSection from './components/HeroSection'
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import MessMenu from './MessMenu';
 import Feedback from './components/pages/Feedback';
-import fire from './Fire'
+import fire from './Fire';
+import Student from './components/Student/Student';
+import member from './components/Mess_Member/member';
 
 
 function App() {
@@ -113,6 +116,9 @@ authlistener();},[])
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/Feedback' component={Feedback} />
+          <Route path='/MessMenu' component={MessMenu} />
+          <Route path='/member' component={member} />
+          <Route path='/Student' component={Student} />
         </Switch>
       </Router>
     </>
